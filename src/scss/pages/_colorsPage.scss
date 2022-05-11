@@ -1,0 +1,50 @@
+@import '../variables/variables';
+
+.colors{
+  position: relative;
+  padding: 10px;
+
+  &__text{
+    max-width: 250px;
+    text-align: center;
+    width: 100%;
+    font-size: $mediumTwoFont;
+    color: $colorBlack;
+    font-weight: 500;
+    margin: auto;
+    padding-top: 45px;
+    margin-bottom: -10px;
+  }
+
+    &__sub{
+      height: 400px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+
+        img:nth-child(1){
+         position: absolute;
+         max-width: 770px;
+         width: 100%;
+         background-size: cover;
+        }
+        img:nth-child(2){
+          position: absolute;
+          max-width: 530px;
+         width: 100%;
+         top: 33%;
+         }
+
+         @include mobile {
+          height: 300px; 
+      }
+    }
+
+
+    &__circle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+}

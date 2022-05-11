@@ -1,0 +1,21 @@
+@import '../variables/variables';
+.summary-feature{
+    max-width: 200px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 25px;
+
+    p:nth-child(1){
+       font-weight: 700;
+       letter-spacing: 1px;
+       font-size: $smallFont;
+       padding: 12px 0px;
+       color: $navTextColor;
+       margin-top: 10px;
+    }
+    p:nth-child(2){
+        font-weight: 500;
+        font-size: $largeFont;
+        color: $colorGray;
+     }
+}

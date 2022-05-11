@@ -1,0 +1,46 @@
+@import '../variables/variables';
+
+.packageFeature{
+    max-width: 313px;
+    width: 100%;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    .packageFeature__subDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .packageFeature__img{
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 3px 7px;
+            margin-top: 10px;
+        }
+    }
+
+    &__sub{
+       width: 100%;
+       height: 100%;
+        border-radius: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid #cfcfcf;
+    
+       p{
+           max-width: 159px;
+           width: 100%;
+           font-size: $mediumTwoFont;
+           text-align: center;
+           letter-spacing: 1px;
+       }
+    }
+}

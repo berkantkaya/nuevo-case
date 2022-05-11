@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './scss/styles.css'
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Models from './pages/Models';
+import Colors from './pages/Colors';
+import Accessories from './pages/Accessories';
+import Summary from './pages/Summary';
+import BrandLogo from './components/BrandLogo';
+import Navbar from './components/Navbar';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {/* children eleman olarak bir container olusuturularak sarmalama yapılabilir */}
+      <BrandLogo/>
+      <Navbar/>
+    <Routes>
+      <Route path="/" element={<Models />} />
+      <Route path="colors" element={<Colors />} />
+      <Route path="accessories" element={<Accessories />} />
+      <Route path="summary" element={<Summary />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 

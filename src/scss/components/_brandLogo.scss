@@ -1,0 +1,33 @@
+@import '../mixins/mixins';
+@import '../variables/variables';
+
+.brand__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    position: relative;
+
+    .brand__round{
+        position: absolute;
+        top: -32%;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background-color: $colorGray;
+    }
+
+    // &__logo {
+    //  width: 27px;
+    // }
+    img{
+        max-width: 107px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    @include tablet {
+        padding: 20px 10px ;
+    }
+
+}

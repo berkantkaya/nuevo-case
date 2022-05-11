@@ -1,0 +1,96 @@
+@import '../variables/variables';
+
+.models{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 150px;
+
+  &__right{
+      margin-top: 150px;
+      padding: 10px;
+      opacity: 0.4;
+
+      img{
+          max-width: 400px;
+          width: 100%;
+      }
+      @include mobile {
+        margin-top: 80px;
+    }
+  }
+
+    &__sub{
+        max-width: 480px;
+        width: 100%;
+      height: 400px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      position: relative;
+      padding: 10px;
+
+
+      div{
+          max-width: 200px;
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          top: 92%;
+      
+          p{
+             font-size: $mediumFont;
+             margin-bottom: 15px;
+          }
+          button{
+              background-color: $navTextColor;
+              color: $buttonTextColor; 
+              border-radius: 15px;
+              letter-spacing: 1px;
+              font-size: $smallFont;
+              max-width: 84px;
+              width: 100%;
+              height: 33px;
+              padding: 4px 8px;
+              border: 1px solid transparent;
+          }
+      }
+
+        img:nth-child(1){
+         position: absolute;
+         max-width: 310px;
+         width: 100%;
+         background-size: cover;
+        }
+        img:nth-child(2){
+          position: absolute;
+          max-width: 440px;
+         width: 100%;
+         top: 43%;
+         }
+         img:nth-child(3){
+            position: absolute;
+            max-width: 437px;
+           width: 100%;
+           top: 10%;
+           }
+           img:nth-child(4){
+            position: absolute;
+            background-color: $buttonColor;
+            border-radius: 50%;
+            width: 33px;
+            height: 33px;
+            padding: 10px;
+           top: 12%;
+           left: 68%;
+           }
+
+         @include mobile {
+          height: 350px; 
+      }
+    }
+    @include mobile {
+       margin-bottom: 20px; 
+    }
+}
